@@ -5,19 +5,14 @@ const msg = document.querySelector("#msg");
 const countValue = document.getElementsByClassName("taskCompleted");
 const pCountTracker = document.querySelector("#count");
 
-
 input.value = "";
 
-
-
-
 okBtn.addEventListener("click", () => {
-  
-  if(checkValidInput(input)){
-      addTask(input);
-      msg.innerHTML = "";
-    }
-    input.value = "";
+  if (checkValidInput(input)) {
+    addTask(input);
+    msg.innerHTML = "";
+  }
+  input.value = "";
 });
 
 function addTask(input) {
@@ -41,27 +36,21 @@ function addTask(input) {
   });
 }
 
-function checkValidInput(input){
-    
-    let tempput = input.value;
-    if (tempput != "" && tempput.length <= 25){
-      return true;
-    }
-    if (tempput == ""){
-        msg.innerHTML = "input must not be empty"
-    } 
-    if (tempput.length > 25){
-        msg.innerHTML = "Too long text.."
-    }
-
-} 
-
-function taskStatus(task){
+function checkValidInput(input) {
+  let tempput = input.value;
+  if (tempput != "" && tempput.length <= 20) {
+    return true;
+  }
+  if (tempput == "") {
+    msg.innerHTML = "input must not be empty";
+  }
+  if (tempput.length > 20) {
+    msg.innerHTML = "Too long text..";
+  }
+}
+function taskStatus(task) {
   task.classList.toggle("taskCompleted");
 }
-
 function updateCount(countValue) {
-  pCountTracker.innerHTML = `${countValue.length} completed`
+  pCountTracker.innerHTML = `${countValue.length} completed`;
 }
-
-
