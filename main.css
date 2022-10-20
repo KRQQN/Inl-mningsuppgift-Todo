@@ -11,6 +11,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+#count {
+    padding-top: none;
+}
 .container {
   padding-top: 5px;
   animation: up-downs 1.5s;
@@ -21,6 +24,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 #textField {
+    width: 200px;
     font-size: 1.5rem;
 }
 #add-task {
