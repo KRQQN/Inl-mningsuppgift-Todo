@@ -50,8 +50,6 @@ li:hover {
   text-decoration: line-through;
 }
 .deleteBtn {
-  font-size: rem;
-
   outline: none;
   background-color: transparent;
   border: none;
