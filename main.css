@@ -12,6 +12,7 @@ body {
   background-attachment: fixed;
 }
 .container {
+  padding-top: 5px;
   animation: up-downs 1.5s;
   padding-bottom: 10px;
   margin-left: auto;
@@ -19,17 +20,25 @@ body {
   width: 350px;
   background-color: rgb(255, 255, 255);
 }
-#textField,
-#add-task {
-  margin-bottom: 0px;
+#textField {
+    font-size: 1.5rem;
 }
+#add-task {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+#headlineBully {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 ul {
   list-style-type: none;
   padding: 0px;
 }
 li {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 15px;
   animation: down-up 0.5s;
 }
