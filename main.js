@@ -48,9 +48,11 @@ function checkValidInput(input) {
     msg.innerHTML = "Too long text..";
   }
 }
+
 function taskStatus(task) {
   task.classList.toggle("taskCompleted");
 }
 function updateCount(countValue) {
   pCountTracker.innerHTML = `${countValue.length} completed`;
 }
+
